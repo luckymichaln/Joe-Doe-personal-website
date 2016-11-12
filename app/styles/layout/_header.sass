@@ -1,0 +1,128 @@
+header
+    +flexbox(flex)
+    position: relative
+
+.bg-left,
+.bg-right
+    height: 95vh
+    width: 50vw
+
+.bg-left
+    background: url(../img/john-doe.jpg) right center no-repeat
+    background-size: cover
+
+.bg-right
+    background-color: $color-bg-medium
+
+.content
+    +flexbox(flex, column, nowrap, space-between, center)
+    position: absolute
+    z-index: 200
+    top: 0
+    left: 50%
+    height: 78vh
+    margin: 11vh 0 0 -510px
+
+    h1
+        position: relative
+        right: 32px
+        margin-top: 21vh
+        font-size: 140px
+
+        &::before
+            content: 'x'
+            position: absolute
+            top: -90px
+            left: 346px
+            font-size: 70px
+            color: $color-text-light
+
+    h2
+        margin-bottom: auto
+        font-size: 45px
+
+        span
+            margin-left: 39px
+
+    nav.top
+        align-self: flex-end
+
+        ul
+            +flexbox(flex)
+
+            li
+                position: relative
+                margin-left: 110px
+                font: 700 16px/1 $font-additional
+                color: $color-text-dark
+
+                &:last-child
+                    color: $color-text-light
+
+                &::before
+                    content: '02'
+                    position: absolute
+                    top: -22px
+                    left: 0
+                    font-size: 14px
+                    color: $color-text-xlight
+
+                &:first-child::before
+                    content: '01'
+
+                &:last-child::before
+                    content: '03'
+                    color: $color-text-light
+
+    nav.bottom
+        +flexbox(flex, $justify-content: space-between, $align_items: flex-end)
+        width: 100%
+
+        .language,
+        .social
+            +flexbox(flex)
+
+        .icon
+            &.behance
+                margin-right: 20px
+
+                &::before
+                    content: '\f1b4'
+                    left: 0
+
+            &.facebook::before
+                content: '\f09a'
+
+            &::before
+                top: 0
+                font:
+                    family: $font-icon
+                    size: 24px
+                color: $color-text-light
+
+        .language a
+            margin-left: 15px
+            font: 700 18px/1 $font-additional
+            text-transform: uppercase
+            color: $color-text-xmedium
+
+            &.active
+                color: $color-text-dark
+
+    .rotated
+        +rotate(90deg)
+        position: absolute
+        top: 40%
+        right: -135px
+        font: 700 16px/1 $font-additional
+        color: $color-text-dark
+
+        &::after
+            content: ''
+            display: inline-block
+            position: relative
+            bottom: 3px
+            left: 20px
+            height: 1px
+            width: 75px
+            background-color: $color-text-xmedium

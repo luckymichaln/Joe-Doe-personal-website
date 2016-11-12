@@ -1,0 +1,45 @@
+.circles-top
+    position: absolute
+    left: 50%
+    height: 95vh
+    width: 100%
+    margin-left: -50%
+    overflow: hidden
+
+    svg
+        position: absolute
+
+        circle
+            stroke: $color-bg
+
+            &.accent
+                stroke: $color-accent
+
+    .svg-1
+        top: 33vh
+        left: -120px
+
+        circle
+            stroke-width: 48px
+
+    .svg-2
+        top: 0
+        right: 0
+
+        circle
+            stroke-width: 150px
+
+    .svg-3
+        top: 0
+        left: calc(50% - 110px)
+
+        circle
+            stroke-width: 42px
+
+    .svg-4,
+    .svg-5
+        bottom: 0
+        left: calc(50% - 90px)
+
+        circle
+            stroke-width: 35px
