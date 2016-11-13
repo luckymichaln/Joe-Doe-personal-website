@@ -15,9 +15,9 @@
         <div class="container content">
             <nav class="top">
                 <ul>
-                    <li><a href="#">Selected works</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#selected-works">Selected works</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <h1>John <span class="accent">Doe</span></h1>
@@ -34,7 +34,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="circles-top">
+        <div class="circles-main">
             <svg class="svg-1" width="240" height="240" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
                 <circle r="90" cx="120" cy="120" fill="transparent" stroke-dasharray="600" stroke-dashoffset="0"></circle>
             </svg>
@@ -53,7 +53,78 @@
         </div>
     </header>
     <main>
+        <div class="container hello-wrapper">
+            <h3 class="big-heading">
+                Hello. I’m John Doe 25 years old <span class="accent-bg">Graphic Designer</span><br>
+                specialize in <span class="accent-bg">mobile apps</span> from Warsaw, Poland.
+            </h3>
+        </div>
+        <div id="selected-works" class="portfolio-wrapper container">
+            <img src="img/portfolio-1.png" width="260" height="450" alt="John Doe portfolio example">
+            <div class="desc">
+                <h4>Just 6ix Weeks</h4>
+                <p>Just 6ix Weeks is a fitness app PSD template.<br>
+                    Just 6ix Weeks looks sleek, modern and has fully
+                    editable 6 screens ready to use for your next design project.</p>
+            </div>
+        </div>
+        <div class="portfolio-wrapper container">
+            <img src="img/portfolio-2.png" width="260" height="450" alt="John Doe portfolio example">
+            <div class="desc">
+                <h4>Ventas UI Kit</h4>
+                <p>Ventas is designed for travel magazines and readers to share
+                   their experience. This UI Kit with 6 fully customizable screens.</p>
+            </div>
+        </div>
+        <div class="portfolio-wrapper container">
+            <img src="img/portfolio-3.png" width="260" height="450" alt="John Doe portfolio example">
+            <div class="desc">
+                <h4>Faumail</h4>
+                <p>Faumail is a clean looking mobile UI kit for mail app design
+                    including high quality 6 screens. This incredible design theme
+                    can help you create great looking mobile app.</p>
+            </div>
+        </div>
+        <div class="circles-overlay">
+            <svg class="svg-6" width="160" height="160" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <circle class="accent" r="60" cx="80" cy="80" fill="transparent" stroke-dasharray="600" stroke-dashoffset="0"></circle>
+            </svg>
+            <svg class="svg-7" width="160" height="160" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <circle class="accent" r="10" cx="80" cy="83" fill="transparent" stroke-dasharray="600" stroke-dashoffset="0"></circle>
+            </svg>
+            <svg class="svg-8" width="160" height="160" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <circle class="accent" r="10" cx="80" cy="83" fill="transparent" stroke-dasharray="600" stroke-dashoffset="0"></circle>
+            </svg>
+            <svg class="svg-9" width="100" height="270" viewPort="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <circle class="accent" r="100" cx="120" cy="140" fill="transparent" stroke-dasharray="600" stroke-dashoffset="0"></circle>
+            </svg>
+        </div>
     </main>
+    <section class="projects-cta">
+        <a href="#">View more projects</a>
+    </section>
+    <section>
+        <div class="container contact-cta">
+            <h5>Contact</h5>
+            <p class="big-heading">
+                You can reach me for an inquiry or just to say hello<br>
+                <a href="mailto:imawesome@johndoe.co" class="accent-bg">imawesome@johndoe.co</a>
+            </p>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h5>Contact form</h5>
+            <form method="GET">
+                <input type="text" placeholder="Your name">
+                <input type="email" placeholder="E-mail adress">
+                <input type="text" placeholder="Your budget range">
+                <textarea name="" placeholder="Your message"></textarea>
+                <button type="button">Send</button>
+            </form>
+            <a href="#top">Take me to top</a>
+        </div>
+    </section>
     <script src="vendors/jquery-1.11.2.min.js"></script>
 </body>
 </html>
