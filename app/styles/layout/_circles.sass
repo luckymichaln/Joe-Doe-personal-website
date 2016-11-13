@@ -1,9 +1,6 @@
-.circles-top
+.circles-overlay,
+.circles-main
     position: absolute
-    left: 50%
-    height: 95vh
-    width: 100%
-    margin-left: -50%
     overflow: hidden
 
     svg
@@ -14,6 +11,13 @@
 
             &.accent
                 stroke: $color-accent
+
+
+.circles-main
+    left: 50%
+    height: 95vh
+    width: 100%
+    margin-left: -50%
 
     .svg-1
         top: 33vh
@@ -43,3 +47,35 @@
 
         circle
             stroke-width: 35px
+
+.circles-overlay
+    top: -140px
+    right: 0
+    height: 260px
+    width: 50vw
+
+    .svg-6
+        right: calc(50% - 90px)
+        bottom: 42px
+
+        circle
+            stroke-width: 28px
+
+    .svg-7,
+    .svg-8
+        bottom: 44px
+
+        circle
+            stroke-width: 6px
+
+    .svg-7
+        margin-left: 14%
+
+    .svg-8
+        right: 11%
+
+    .svg-9
+        right: 0
+
+        circle
+            stroke-width: 40px
